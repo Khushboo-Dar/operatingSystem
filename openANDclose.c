@@ -1,3 +1,4 @@
+/*A program to implement file manipulation system calls; open and close*/
 #include<stdio.h>
 #include<stdlib.h>
 #include<fcntl.h> //required for open system call

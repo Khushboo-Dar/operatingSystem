@@ -1,3 +1,4 @@
+/*A program demonstrating the implementation of system calls for manipulating the file descriptors*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <fcntl.h>
