@@ -2,7 +2,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<fcntl.h> //required for open system call
-#include<unistd.h> // reqd for clode sys call
+#include<unistd.h> // reqd for close sys call
 int main()
 {
     char *file_path = "example.txt";
@@ -28,7 +28,7 @@ int main()
    }
    if(bytes_read==-1)
    {
-    perror("erroe reading file");
+    perror("error reading file");
     exit(EXIT_FAILURE);
    }
     
