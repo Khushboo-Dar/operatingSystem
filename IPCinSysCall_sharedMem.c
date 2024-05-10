@@ -1,0 +1,1 @@
+/*A program demonstrating the inter-process communication using shared memory*/
