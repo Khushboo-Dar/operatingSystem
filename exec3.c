@@ -7,6 +7,6 @@ int main()
     printf("PID of exec3.c is %d.\n", getpid());
     char *args[] = {"./hello2", NULL};
     execv(args[0], args);
-    printf("Coming back to exec_demo.c");
+    printf("Coming back to exec3.c");
     return 0;
 }
