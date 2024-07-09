@@ -53,3 +53,10 @@ int main()
    }
    return 0;
 }
+/*
+The program creates a pipe for IPC.
+It forks a new process.
+The parent process writes a message to the pipe.
+The child process reads the message from the pipe and prints it.
+Both processes close their respective pipe ends when done.
+The parent process waits for the child to finish before exiting.*/

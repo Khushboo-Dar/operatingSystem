@@ -42,3 +42,10 @@ int main() {
     sem_destroy(&semaphore); // Destroy the semaphore
     return 0;
 }
+
+/*The purpose of this program is to illustrate how semaphores can be used to control access to a limited number of resources in a multithreaded environment. It shows how to:
+
+Initialize a semaphore.
+Use sem_wait and sem_post to manage resource access.
+Create and join threads in C.
+Here , five threads try to access three available resources concurrently*/

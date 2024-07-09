@@ -64,3 +64,8 @@ int main()
 
     return 0;
 }
+/*
+Thread Creation: Using pthread_create to create multiple threads.
+Mutex Usage: Using a mutex to ensure that only one thread accesses the critical section at a time.
+Thread Synchronization: Using pthread_join to wait for all threads to complete.
+Resource Management: Proper initialization and destruction of the mutex to avoid resource leaks.*/

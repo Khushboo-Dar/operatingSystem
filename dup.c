@@ -41,7 +41,7 @@ int main() {
 
     // Reading and printing the contents of the file using duplicated file descriptor
     printf("\nDuplicated file descriptor content:\n");
-    lseek(dup_fd, 0, SEEK_SET); // Resetting the file pointer
+    lseek(dup_fd, 0, SEEK_SET); //resets the file pointer of the duplicated file descriptor to the beginning of the file.
     while ((bytes_read = read(dup_fd, buffer, sizeof(buffer))) > 0) {
         write(STDOUT_FILENO, buffer, bytes_read);
     }
@@ -66,3 +66,14 @@ int main() {
 
     return 0;
 }
+/*
+Open a file and obtain its file descriptor.
+Duplicate the file descriptor using dup.
+Read and print the file contents using both the original and duplicated file descriptors.
+Reset the file pointer using lseek.
+Close the file descriptors properly to release system resources.
+
+
+
+
+*/
